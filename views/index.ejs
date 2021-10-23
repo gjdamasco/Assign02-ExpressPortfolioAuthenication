@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+
+  <!-- CSS Section -->
+  <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css' />
+  <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel='stylesheet' href='/content/app.css' />
+</head>
+
+<body>   
+   <!-- Partials for header section -->
+  <%- include('./components/header.ejs'); %>
+
+  <!-- Body content -->
+  <%- include('./contents/' + page + '.ejs'); %>
+
+ 
+ <!-- Partials for footer section -->
+   <%- include('./components/footer.ejs'); %>
+
+  <!-- Script Section -->
+  <%- include('./components/script.ejs'); %>
+
+</body>
+</html>
+
+<!-- Student: Geejay Damasco | SN: 301163720 -->
+<!-- Assignment 01 - Express Portfolio Site -->
+<!-- October 03, 2021 - Fall2021 -->

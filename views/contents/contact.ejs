@@ -1,0 +1,58 @@
+  <div class="container"> 
+    
+     <h1><%= title %></h1>
+   <br>
+
+   <!-- Contact Form-->
+ <form class="row g-3">
+   <div class="row g-3">
+      <!-- First name label-->      
+      <div class="col">
+        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+      </div>
+      <!-- Last name label--> 
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+      </div>
+      <!-- email label--> 
+      <div class="col">
+         <input type="text" class="form-control" placeholder="email" aria-label="Email">
+       </div>
+    </div>
+  <div class="col-12">
+    <!-- address label--> 
+    <label for="inputAddress" class="form-label">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <!-- address label--> 
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">City</label>
+    <input type="text" class="form-control" id="inputCity">
+  </div>
+   <!-- address label--> 
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">Province</label>
+    <select id="inputState" class="form-select">
+      <option selected>Choose...</option>
+      <option>Ontario</option>
+      <option>Quebec</option>
+      <option>Alberta</option>
+      <option>BC</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="inputZip">
+  </div>
+
+   <!-- message area --> 
+  <div class="mb-3">
+   <label for="message" class="form-label">Textarea</label>
+   <textarea class="form-control " placeholder="Please enter a message"></textarea>
+ </div>
+   <!-- inquiry button and link back to homepage--> 
+  <div class="col-12">
+    <a href="/" type="button" >Send Message</button>       
+  </div> 
+ </form>
+</div>
