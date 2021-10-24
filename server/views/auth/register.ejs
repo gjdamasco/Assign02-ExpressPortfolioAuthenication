@@ -1,0 +1,96 @@
+ <!-- A2 - Register --> 
+
+   <!-- Partials for header section -->
+  <%- include('../components/header.ejs'); %>
+
+<body>   
+    <!-- Body content -->
+  <div class="row">
+      <div class="offset-md-3 col-md-6 col-sm-12">
+            <div class="login" id="contentArea">
+                <h1 class="display-4">Register</h1>
+
+                <% if(messages.length > 0) { %>
+                  <div id="messageArea" class="alert alert-danger">
+                    <%= messages %>
+                  </div>
+                <% } %>
+
+                <form method="POST" id="registerForm" novalidate>
+                  <p class="hint-text">Create your own account. It's free and only takes a minute.</p>
+                  <div class="form-group">
+                    <div class="row">
+                      <p class="lead"><i class="fas fa-user-shield"></i> Personal Information</p>
+                      <div class="col-md-6">
+                        <input class="form-control" type="text" name="FirstName" id="firstName" placeholder="First Name" required>
+                      </div>
+                      <div class="col-md-6">
+                        <input class="form-control" type="text" name="LastName" id="lastName" placeholder="Last Name" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <input type="email" class="form-control" id="emailAddress" name="EmailAddress" required
+                        value="" placeholder="Email Address">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group mt-4">
+                    <div class="row">
+                      <p class="lead"><i class="fas fa-database"></i>System Identification</p>
+                      <div class="col-md-12">
+                        <input type="text" class="form-control" id="username" name="username"  required
+                        value="" placeholder="Username">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <input type="password" class="form-control" id="password" name="password"  required
+                        value="" placeholder="Password">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <input type="password" class="form-control" id="confirmPassword" name="confirmPassword"  required
+                        value="" placeholder="Confirm Password">
+                      </div>
+                    </div>
+                  </div>
+                  
+                                                      
+                  <div class="text-end mt-2">
+                    <button id="submitButton" type="submit" class="btn btn-primary">Register</button>                    
+                    <a href="/"><button id="cancelButton" type="reset" class="btn btn-warning"><i class="fas fa-undo"></i> Cancel</button></a> 
+                  </div>
+                </form>
+              
+            </div>
+            <p class="text-center text-muted small">
+              Already have an account? 
+              <a href="/login">Sign in</a>
+            </p>
+      </div>
+  </div>
+
+
+ <!-- Partials for footer section -->
+   <%- include('../components/footer.ejs'); %>
+
+  <!-- Script Section -->
+  <%- include('../components/script.ejs'); %>
+
+</body>
+</html>
+
+
+<!-- Student: Geejay Damasco | SN: 301163720 -->
+<!-- Assignment 02 - Express Portfolio Authentication -->
+<!-- October 22, 2021 - Fall2021 -->
+

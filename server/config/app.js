@@ -4,6 +4,13 @@ let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
 
+// A2 - modules for authentication
+let session = require('express-session');
+let passport = require('passport');
+let passportLocal = require('passport-local');
+let localStrategy = passportLocal.Strategy;
+let flash = require('connect-flash');
+
 // A-2 database setup
 let mongoose = require('mongoose');
 let DB = require('./db');
@@ -39,6 +46,31 @@ app.use(express.static(path.join(__dirname, '../../public')));        // A2 - up
 
 // static path to join all node_modules folders inside the index.ejs
 app.use(express.static(path.join(__dirname, '../../node_modules')));  // A2 - update public folder path
+
+
+// A2 - setup for express session
+app.use(session({
+  secret: "SomeSecret",
+  saveUninitialized: false,
+  resave: false
+}));
+
+// A2 - initialize flash
+app.use(flash());
+
+// A2 - initialize passport
+app.use(passport.initialize());
+app.use(passport.session());
+
+// A2 - passport user configuration
+// A2 create user model instance
+let userModel = require('../models/user');
+let User = userModel.User;
+
+// A2 - serialize and deserialize the user information
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
+
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
