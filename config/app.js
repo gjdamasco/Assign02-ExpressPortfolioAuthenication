@@ -4,23 +4,26 @@ let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
 
-// database setup
+// A-2 database setup
 let mongoose = require('mongoose');
 let DB = require('./db');
 
-// point mongoose to DB URI
+// A-2 point mongoose to DB URI
 mongoose.connect(DB.URI);
 
-// create an event to connect to dbase 
+// A-2 create an event to connect to dbase 
 let mongoDB = mongoose.connection;
-mongoDB.on('error',console.error.bind(console, 'Connection Error: ')) // an event for db error
-mongoDB.once('open', ()=>{                                            // an event for online connection
+mongoDB.on('error',console.error.bind(console, 'Connection Error: ')) // A2 - an event for db error
+mongoDB.once('open', ()=>{                                            // A2 - an event for online connection
   console.log('Connected to MongoDB...');
 })  
 
 
 let indexRouter = require('../routes/index');  //update indexRoute path
 let usersRouter = require('../routes/users');  //update usersRoute path
+
+// A2 - for contacts router integration
+let contactsRouter = require('../routes/contact');
 
 let app = express();
 
@@ -39,6 +42,9 @@ app.use(express.static(path.join(__dirname, '../node_modules')));  //update publ
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
+// A2 - for app use of contactsRouter
+app.use('/contact-list', contactsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

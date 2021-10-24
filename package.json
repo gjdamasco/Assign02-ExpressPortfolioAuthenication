@@ -1,20 +1,16 @@
 {
-  "name": "assign01-expressportfoliosite",
+  "name": "assign02-authentication",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4",
-    "bootstrap": "^5.1.1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
-    "mongoose": "^6.0.12",
-    "morgan": "~1.9.1",
-    "popper.js": "^1.16.1"
+    "morgan": "~1.9.1"
   }
 }
