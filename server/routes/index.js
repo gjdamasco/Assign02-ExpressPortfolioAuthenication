@@ -1,34 +1,24 @@
-var express = require('express');
-var router = express.Router();
+let express = require('express');
+let router = express.Router();
+
+let indexController = require('../controllers/index');
 
 /* GET Home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Home Page', page: 'home'});
-});
+router.get('/', indexController.displayHomePage);
 
 /* GET Home page. */
-router.get('/home', function(req, res, next) {
-  res.render('index', { title: 'Home Page', page: 'home'});
-});
+router.get('/home', indexController.displayHomePage);
 
 /* GET About page. */
-router.get('/about', function(req, res, next) {
-  res.render('index', { title: 'About Me', page: 'about'});
-});
+router.get('/about', indexController.displayAboutPage);
 
 /* GET Projects page. */
-router.get('/projects', function(req, res, next) {
-  res.render('index', { title: 'My Projects', page: 'projects'});
-});
+router.get('/projects', indexController.displayProductsPage);
 
 /* GET Services page. */
-router.get('/services', function(req, res, next) {
-  res.render('index', { title: 'Services Page', page: 'services'});
-});
+router.get('/services', indexController.displayServicesPage);
 
 /* GET Contact page. */
-router.get('/contact', function(req, res, next) {
-  res.render('index', { title: 'Contact Page', page: 'contact'});
-});
+router.get('/contact', indexController.displayContactPage);
 
 module.exports = router;
