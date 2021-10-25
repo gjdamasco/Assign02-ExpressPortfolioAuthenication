@@ -67,6 +67,9 @@ app.use(passport.session());
 let userModel = require('../models/user');
 let User = userModel.User;
 
+// implement User Auth Strategy
+passport.use(User.createStrategy());
+
 // A2 - serialize and deserialize the user information
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
