@@ -38,9 +38,28 @@
           <li class="nav-item">
             <a class="nav-link" href="/contact"><i class="far fa-address-book"></i> Contact </a>  <!-- Contact link page -->
           </li>
-          <li class="nav-item">   
-            <a class="nav-link" href="/login"><i class="fas fa-sign-in-alt"></i> Log In </a>  <!-- Log In link page -->
+
+          <% if(typeof displayName == 'string' && displayName) { %>            
+            <li class="nav-item">   
+            <a class="nav-link" href="/contact-list"><i class="fas fa-file-contract"></i> Business Contacts </a>  <!-- Contact List view  -->
+            </li>
+          <% } %>
+
+          <li class="nav-item">
+            <a class="nav-link"></a>  
           </li>
+
+          <% if(typeof displayName == 'string' && displayName) { %>
+            <li class="navbar-text"><i class="fas fa-user"></i> Welcome, <%= displayName %></li>
+            <li class="nav-item">   
+            <a class="nav-link" href="/logout"><i class="fas fa-sign-out-alt"></i> Log Out </a>  <!-- Log out link page -->
+            </li>
+
+          <% } else { %>
+            <li class="nav-item">   
+              <a class="nav-link" href="/login"><i class="fas fa-sign-in-alt"></i> Log In </a>  <!-- Log In link page -->
+            </li>
+          <% } %>
           
         </ul>
       </div>

@@ -11,23 +11,23 @@ let User = userModel.User;
 
 
 module.exports.displayHomePage = (req, res, next) => {
-    res.render('index', {title: 'Home', page: 'home'});
+    res.render('index', {title: 'Home', page: 'home', displayName: req.user ? req.user.displayName: ''});
 }
 
 module.exports.displayAboutPage = (req, res, next) => {
-    res.render('index', { title: 'About Me', page: 'about'});
+    res.render('index', { title: 'About Me', page: 'about', displayName: req.user ? req.user.displayName: ''});
 }
 
 module.exports.displayProductsPage = (req, res, next) => {
-    res.render('index', { title: 'My Projects', page: 'projects'});
+    res.render('index', { title: 'My Projects', page: 'projects', displayName: req.user ? req.user.displayName: ''});
 }
 
 module.exports.displayServicesPage = (req, res, next) => {
-    res.render('index', { title: 'Services Page', page: 'services'});
+    res.render('index', { title: 'Services Page', page: 'services', displayName: req.user ? req.user.displayName: ''});
 }
 
 module.exports.displayContactPage = (req, res, next) => {
-    res.render('index', { title: 'Contact Page', page: 'contact'});
+    res.render('index', { title: 'Contact Page', page: 'contact', displayName: req.user ? req.user.displayName: ''});
 }
 
 // user login page
