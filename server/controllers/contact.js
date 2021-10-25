@@ -20,7 +20,7 @@ module.exports.displayContactList = (req, res, next) => {
                 ContactList: contactList, 
                 displayName: req.user ? req.user.displayName : ''});  // render for the Contact list object 
         }
-    });
+    }).sort({contactName: 1});    // added sorting alphabetically
 }
 
 module.exports.displayAddPage = (req, res, next) => {
