@@ -5,13 +5,16 @@ One of my project during my studies when I worked with ExpressJS and NodeJS that
 
 <h5>Project Setup and execution: </h5>
 1. Clone the code to your local folder using git in your VS Code.
-1. Install the following:
+
+2. Install the following:
   - npm
   - express
   - nodemon
   - mongoose
-1. After successful installations, run the command <strong>mongoose </strong> to load the local database from a cmd window and <strong> nodemon </strong> from VS Code.
-1. Local host of the home webpage should be displayed.
+
+3. After successful installations, run the command <strong>mongoose </strong> to load the local database from a cmd window and <strong> nodemon </strong> from VS Code.
+
+4. Local host of the home webpage should be displayed.
 
 Screens:
 <h5>Homepage </h5>
