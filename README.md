@@ -1,7 +1,13 @@
 <h5>Title:</h5> Express Portfolio Authentication
 
 <h5>Description: </h5> 
-One of my project during my studies when I worked with ExpressJS and NodeJS that used Authentication. The website includes a secure section that displays a list of contacts when authorized to login. With different View templates and partials by implementing the EJS Template Engine - Homepage, Projects Page, Services Page, Contact Page, Business Page and Login Page. The JavaScript, HTML and CSS were used For the technology tools. The Heroku App was used for Cloud Hosting.
+<p>One of my project during my studies when I worked with ExpressJS and NodeJS that used Authentication. The website includes a secure section that displays a list of contacts when authorized to login. With different View templates and partials by implementing the EJS Template Engine - Homepage, Projects Page, Services Page, Contact Page, Business Page and Login Page. The JavaScript, HTML and CSS were used For the technology tools. The Heroku App was used for Cloud Hosting. <br>
+
+username: admin <br>
+password: admin <br>
+
+Default Username and password "admin" were used to authroized the user to log in. If new user is needed, Register link should be used.  
+</p>
 
 <h5>Project Setup and execution: </h5>
   1. Clone the code to your local folder using git in your VS Code.
@@ -34,3 +40,9 @@ One of my project during my studies when I worked with ExpressJS and NodeJS that
 
 <h5>LogIn Page </h5>
 ![logIn](/assets/screenshots/logIn.jpg)]
+
+<h5>AdminBusiness Page </h5>
+![adminBusPage](/assets/screenshots/adminBusPage.jpg)]
+
+
+
