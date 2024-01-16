@@ -4,7 +4,7 @@
 One of my project during my studies when I worked with ExpressJS and NodeJS that used Authentication. The website includes a secure section that displays a list of contacts when authorized to login. With different View templates and partials by implementing the EJS Template Engine - Homepage, Projects Page, Services Page, Contact Page, Business Page and Login Page. The JavaScript, HTML and CSS were used For the technology tools. The Heroku App was used for Cloud Hosting.
 
 <h5>Project Setup and execution: </h5>
-1. Clone the code to your local folder using git in your VS Code.
+ 1. Clone the code to your local folder using git in your VS Code.
 
 2. Install the following:
   - npm
@@ -16,7 +16,7 @@ One of my project during my studies when I worked with ExpressJS and NodeJS that
 
 4. Local host of the home webpage should be displayed.
 
-Screens:
+<h5>Screens: </h5>
 <h5>Homepage </h5>
 ![Homepage](/assets/screenshots/homepage.jpg)]
 
