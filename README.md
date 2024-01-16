@@ -6,7 +6,9 @@
 username: admin <br>
 password: admin <br>
 
-Default Username and password "admin" were used to authroized the user to log in. If new user is needed, Register link should be used.  
+Default Username and password <strong>"admin" </strong> were used to authroized the user to log in. If new user is needed, Register link should be used.  <br>
+
+Once login is successful, user should be able to see the Business page and can perform the functions <strong> "Add", "Edit" and "Delete" </strong> of the Business Contact List page.
 </p>
 
 <h5>Project Setup and execution: </h5>
