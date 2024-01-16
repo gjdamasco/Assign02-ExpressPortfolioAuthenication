@@ -26,25 +26,33 @@ Once login is successful, user should be able to see the Business page and can p
 
 <h5>Screens: </h5>
 <h5>Homepage </h5>
-![Homepage](/assets/screenshots/homepage.jpg)]
 
-<h5>aboutMePage </h5>
-![aboutMePage](/assets/screenshots/aboutMePage.jpg)]
+![Homepage](https://github.com/gjdamasco/ExpressPortfolioAuthentication/blob/main/public/assets/screenshots/homePage.JPG)
 
-<h5>myProjPage </h5>
-![myProjPage](/assets/screenshots/myProjPage.jpg)]
 
-<h5>myProjPage </h5>
-![myProjPage](/assets/screenshots/myProjPage.jpg)]
+<h5>About Me Page </h5>
+
+![Homepage](https://github.com/gjdamasco/ExpressPortfolioAuthentication/blob/main/public/assets/screenshots/aboutMePage.JPG)
+
+<h5>My Project Page </h5>
+
+![myProjPage](https://github.com/gjdamasco/ExpressPortfolioAuthentication/blob/main/public/assets/screenshots/myProjPage.JPG)
+
+<h5>My Contact Page </h5>
+
+![myContactPage](https://github.com/gjdamasco/ExpressPortfolioAuthentication/blob/main/public/assets/screenshots/contactPage.JPG)
 
 <h5>Service Page </h5>
-![svcPage](/assets/screenshots/svcPage.jpg)]
+
+![svcPage](https://github.com/gjdamasco/ExpressPortfolioAuthentication/blob/main/public/assets/screenshots/svcPage.JPG)
 
 <h5>LogIn Page </h5>
-![logIn](/assets/screenshots/logIn.jpg)]
 
-<h5>AdminBusiness Page </h5>
-![adminBusPage](/assets/screenshots/adminBusPage.jpg)]
+![logIn](https://github.com/gjdamasco/ExpressPortfolioAuthentication/blob/main/public/assets/screenshots/logIn.JPG)
+
+<h5>Admin Business Page </h5>
+
+![adminBusPage](https://github.com/gjdamasco/ExpressPortfolioAuthentication/blob/main/public/assets/screenshots/adminBusPage.JPG)
 
 
 
